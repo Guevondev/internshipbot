@@ -1,0 +1,22 @@
+{
+  "name": "internshipbot",
+  "version": "1.0.0",
+  "description": "Discord bot to share internships",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kappita/internshipbot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kappita/internshipbot/issues"
+  },
+  "homepage": "https://github.com/kappita/internshipbot#readme",
+  "dependencies": {
+    "discord.js": "^14.7.1"
+  }
+}

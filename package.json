@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "start": "node .",
-    "dev": "nodemon --config nodemon.json src/client/index.ts"
+    "dev": "nodemon --config nodemon.json src/index.ts"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,7 @@
     "typescript": "^4.9.4"
   },
   "dependencies": {
+    "discord.js": "^14.7.1",
     "dotenv": "^16.0.3"
   }
 }

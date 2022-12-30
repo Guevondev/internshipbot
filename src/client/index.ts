@@ -1,5 +1,18 @@
-import { Client } from 'discord.js'
-import * as tokens from '../../config.json'
+import { Client, ClientEvents, GatewayIntentBits} from 'discord.js'
+import keys from '../keys'
+import { registerEvents } from '../utils'
+import events from '../events'
 
-console.log(tokens.token)
 
+
+
+
+const client = new Client({intents: 265232})
+
+registerEvents(client, events)
+
+client.login(keys.clientToken).catch((err) => {
+    console.error('[Login error]', err)
+    process.exit(1)
+})
+console.log('Anashe')

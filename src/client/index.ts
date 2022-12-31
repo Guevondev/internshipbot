@@ -7,7 +7,9 @@ import events from '../events'
 
 
 
-const client = new Client({intents: 265232})
+const client = new Client({intents: [
+    8
+]})
 
 registerEvents(client, events)
 
@@ -15,4 +17,3 @@ client.login(keys.clientToken).catch((err) => {
     console.error('[Login error]', err)
     process.exit(1)
 })
-console.log('Anashe')

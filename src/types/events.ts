@@ -8,7 +8,7 @@ export interface eventProps {
 
 export type eventKeys = keyof ClientEvents
 export type eventExec <T extends eventKeys> =
-    (props: eventProps, ... args: ClientEvents[T]) => Awaitable<void>
+    (props: eventProps, ... args: ClientEvents[T]) => Awaitable<unknown>
 
 export interface event <T extends eventKeys>{
     id: T,

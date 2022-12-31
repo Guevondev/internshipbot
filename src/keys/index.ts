@@ -1,8 +1,9 @@
 import { keys } from '../types'
-import { token } from '../../config.json'
+import botKeys from '../../config.json'
 
 const Keys: keys  = {
-    clientToken: token ?? 'nil'
+    clientToken: botKeys.token ?? 'nil',
+    testGuild:  botKeys.testGuild ?? 'nil'
 }
 
 if (Object.values(Keys).includes('nil'))

@@ -1,1 +1,1 @@
-import './client/index.ts'
+import './client'
